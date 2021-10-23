@@ -1,21 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-import { UsermoduleRoutingModule } from './usermodule-routing.module';
-import { UseraddupdateComponent } from './users/useraddupdate/useraddupdate.component';
+import { UserComponent } from './users/user/user.component';
 import { UserlistComponent } from './users/userlist/userlist.component';
-import { RoleaddupdateComponent } from './roles/roleaddupdate/roleaddupdate.component';
+import { RoleComponent } from './roles/role/role.component';
 import { RolelistComponent } from './roles/rolelist/rolelist.component';
 import { RolerightsComponent } from './rolesrights/rolerights/rolerights.component';
+import { UsersRoutingModule } from './users-routing.module';
 
 @NgModule({
   declarations: [
-    UseraddupdateComponent,
+    UserComponent,
     UserlistComponent,
-    RoleaddupdateComponent,
+    RoleComponent,
     RolelistComponent,
     RolerightsComponent,
   ],
-  imports: [CommonModule, UsermoduleRoutingModule],
+  imports: [CommonModule, UsersRoutingModule],
 })
-export class UsermoduleModule {}
+export class UsersModule {}

@@ -29,9 +29,7 @@ const routes: Routes = [
       {
         path: 'users',
         loadChildren: () =>
-          import('./pages/usermodule/usermodule.module').then(
-            (m) => m.UsermoduleModule
-          ),
+          import('./pages/users/users.module').then((m) => m.UsersModule),
       },
     ],
   },
