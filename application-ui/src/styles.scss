@@ -4,28 +4,6 @@
 Admin LTE customization
 */
 
-@import "@angular/material/prebuilt-themes/indigo-pink.css";
-// bootstrap functions customization
-@import "./styles/bootstrap-functions";
-
-// bootstrap variables customization
-@import "./styles/bootstrap-variables";
-
-//build boostrap library
-// @import "../node_modules/bootstrap/scss/bootstrap";
-
-@import "./styles/variables";
-
-// build Font Awesome Icons
-
-@import "~@fortawesome/fontawesome-free/scss/brands";
-@import "~@fortawesome/fontawesome-free/scss/regular";
-@import "~@fortawesome/fontawesome-free/scss/solid";
-@import "~@fortawesome/fontawesome-free/scss/fontawesome";
-
-// build AdminLTE theme styles
-@import "../node_modules/admin-lte/build/scss/AdminLTE";
-
 // Google Font: Source Sans Pro
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700");
 html,
@@ -80,7 +58,8 @@ body {
 }
 
 .content-wrapper {
-  padding-top: 52px;
+  padding-top: 35px;
+  background: #fff; //#f4f6f9
 }
 .main-header {
   width: -webkit-fill-available;
@@ -267,44 +246,6 @@ body {
   background: #555;
 }
 
-// .text-sm .content-header {
-//   padding: 0px 0px 0px 0px;
-// }
-
-// .text-sm .nav-link {
-//   padding: 2px;
-// }
-// .layout-fixed .brand-link {
-//   width: 185px;
-// }
-// .main-sidebar,
-// .main-sidebar::before {
-//   width: 185px;
-// }
-
-// .content-wrapper,
-// body:not(.sidebar-mini-md) .main-footer,
-// body:not(.sidebar-mini-md) .main-header {
-//   margin-left: 185px;
-// }
-
-// body:not(.sidebar-mini-md) .content-wrapper,
-// body:not(.sidebar-mini-md) .main-footer,
-// body:not(.sidebar-mini-md) .main-header {
-//   margin-left: 185px;
-// }
-
-// .sidebar-mini.sidebar-collapse .main-sidebar,
-// .sidebar-mini.sidebar-collapse .main-sidebar::before {
-//   width: 3.6rem;
-// }
-
-// .sidebar-mini.sidebar-collapse .content-wrapper,
-// .sidebar-mini.sidebar-collapse .main-footer,
-// .sidebar-mini.sidebar-collapse .main-header {
-//   margin-left: 3.6rem !important;
-// }
-
 #footer {
   position: fixed;
   padding: 0px 65px 0px 3px;
@@ -314,24 +255,22 @@ body {
   // background: transparent;
 }
 
+.navbar-expand .navbar-nav .dropdown-menu {
+  position: absolute;
+  margin-left: -224px;
+}
 #pagetitle {
   position: fixed;
   padding: 0px 0px 0px 3px;
   top: 20px;
   width: 100%;
   height: 30px;
-  background-color: #fff;
+  /* background-color: #fff; */
   margin-top: 12px;
   z-index: 1034;
-  border-top: 2px solid #fff;
-  box-shadow: 0 0 1px rgb(0 0 0 / 13%), 0 1px 3px rgb(0 0 0 / 20%);
-  border-bottom: 2px solid #fff;
-}
-.content {
-  padding-top: 15px;
-}
-.content-wrapper {
-  background: #fff; //#f4f6f9
+  /* border-top: 2px solid #fff; */
+  /* box-shadow: 0 0 1px rgb(0 0 0 / 13%), 0 1px 3px rgb(0 0 0 / 20%); */
+  /* border-bottom: 2px solid #fff; */
 }
 
 .mat-form-field {
@@ -363,21 +302,8 @@ label:not(.form-check-label):not(.custom-file-label) {
   color: #f44336;
   font-size: 11px;
 }
-// .mat-form-field-appearance-legacy .mat-form-field-subscript-wrapper {
-//   margin-top: 0.5416666667em;
-//   top: calc(92% - 1.6666666667em);
-// }
-// .mat-list-item {
-//   height: 50px !important;
-// }
 
 .mat-form-field-appearance-legacy .mat-form-field-infix {
   padding: 0.4375em 0;
   padding-bottom: 0px;
 }
-// .mat-list-base .mat-list-item {
-//   font-size: 14px;
-// }
-// .mat-list-base .mat-list-item {
-//   font-size: 14px;
-// }
