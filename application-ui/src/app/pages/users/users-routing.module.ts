@@ -7,15 +7,15 @@ import { UserComponent } from './users/user/user.component';
 import { UserlistComponent } from './users/userlist/userlist.component';
 
 const routes: Routes = [
-  { path: 'userlist', component: UserlistComponent },
-  { path: 'user', component: UserComponent },
-  { path: 'rolelist', component: RolelistComponent },
-  { path: 'role', component: RoleComponent },
-  { path: 'right', component: RolerightsComponent },
+  { path: 'admin/users', component: UserlistComponent },
+  { path: 'admin/user', component: UserComponent },
+  { path: 'admin/rolelist', component: RolelistComponent },
+  { path: 'admin/role', component: RoleComponent },
+  { path: 'admin/right', component: RolerightsComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class UsersRoutingModule {}
+export class UsersRoutingModule { }
